@@ -118,8 +118,8 @@ div.title {
 
 div.mySwiperCare-div p {
      
-  
-    margin: 10px;
+  width: 90%;
+    margin: 10px auto;
     color: white;
     font-weight: 700;
     font-size: 14px;
@@ -128,4 +128,65 @@ div.mySwiperCare-div p {
 
 div.mySwiperCare-div p span{
     display: block;
+    text-transform: uppercase;
+}
+
+/* formula */
+
+.title-h3{
+    text-align: center;
+    color: #0c1579;
+    font-weight: 800;
+
+    font-size: 25px;
+}
+
+.formula{
+    margin: 50px auto;
+}
+
+.formula-img{
+    position: relative;
+}
+
+
+.formula-div{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+   color: white;
+   width: 37%;
+   margin: auto;
+}
+
+.formula-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.formula-div h3{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+.formula-images div{
+    text-align: center;
+}
+
+.formula-images div img{
+    width: 90px;
+}
+
+
+/* ingridients */
+
+.ingridients ul li{
+    list-style-type: circle;
+}
+
+.ingridients ul{
+    margin-left: 20px;
 }
