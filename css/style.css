@@ -58,3 +58,16 @@ h1 span{
     text-transform: uppercase;
     font-weight: 800;
 }
+
+
+/* product */
+
+.product{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.product-img{
+    width: 70%;
+    margin: auto;
+}
