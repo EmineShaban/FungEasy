@@ -57,6 +57,7 @@ h1 span{
     color: #0c1579;
     text-transform: uppercase;
     font-weight: 800;
+    display: block;
 }
 
 
@@ -70,4 +71,56 @@ h1 span{
 .product-img{
     width: 70%;
     margin: auto;
+}
+.product ul {
+    margin-left: 20px;
+}
+.product ul li{
+    list-style-type: disc;
+}
+
+/* footFungus */
+
+.footFungus {
+    margin: 50px auto;
+    position: relative;
+}
+
+.footFungus-div{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    background-color: azure;
+    padding: 20px; 
+    border-radius: 15px;
+}
+
+
+.sw{
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    background-color: #7bacce;
+
+}
+
+div.title {
+    background-color: #dedede;
+    padding: 10px;
+    margin: 10px;
+    border-top-right-radius: 125px;
+    border-bottom-left-radius: 125px;
+    font-weight: 900;
+}
+
+div.mySwiperCare-div p {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: left;
 }
