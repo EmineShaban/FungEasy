@@ -192,7 +192,7 @@ div.mySwiperCare-div p span {
 .formula-images div img {
     width: 90px;
 }
-
+ 
 
 /* ingridients */
 
@@ -207,13 +207,14 @@ div.mySwiperCare-div p span {
 .ingr-div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 25px;
+    gap: 15px;
+    margin: 25px auto;
 }
 
 .ingr {
     display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 10px;
+    grid-template-columns: 120px 1fr;
+    gap: 5px;
 }
 
 .text {
@@ -225,10 +226,55 @@ div.mySwiperCare-div p span {
     padding-right: 3px;
     padding-bottom: 3px;
     font-weight: 800;
-    border-bottom: 1px solid #1d227f6b;
-    border-right: 1px solid #1d227f6b;
+    border-bottom: 1px solid #0c1579;
+    border-right: 1px solid #0c1579;
+    margin-bottom: 0;
 }
 
 .text p{
     font-weight: 500;
+    margin-top: 10px;
 }
+
+/* treatment */
+
+.treatment-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+ul li{
+    margin-bottom: 10px;
+}
+
+/* instruction */
+.instruction{
+    color: #0c1579;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+.instruction h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+.instr img{
+    width: 100px;
+}
+
+.instr{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.how-to-use{
+    margin: 25px auto;
+    position: relative;
+}
+
+
