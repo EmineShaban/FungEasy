@@ -207,7 +207,7 @@ div.mySwiperCare-div p span {
 .ingr-div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
+    gap: 70px;
     margin: 25px auto;
 }
 
@@ -277,4 +277,27 @@ ul li{
     position: relative;
 }
 
+.instr p{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 10px; 
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.24);
+    margin-left: -20px;
+    width: 50%;
+}
 
+.right p{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 10px; 
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.24);
+    margin-right: -20px;
+    text-align: center;
+
+}
