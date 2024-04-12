@@ -112,7 +112,7 @@ h1 span {
 
 
 .sw {
-    width: 50%;
+    width: 40%;
     margin: auto;
     padding: 30px;
     background-color: #7bacce;
@@ -192,7 +192,7 @@ div.mySwiperCare-div p span {
 .formula-images div img {
     width: 90px;
 }
- 
+
 
 /* ingridients */
 
@@ -231,24 +231,24 @@ div.mySwiperCare-div p span {
     margin-bottom: 0;
 }
 
-.text p{
+.text p {
     font-weight: 500;
     margin-top: 10px;
 }
 
 /* treatment */
 
-.treatment-list{
+.treatment-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-ul li{
+ul li {
     margin-bottom: 10px;
 }
 
 /* instruction */
-.instruction{
+.instruction {
     color: #0c1579;
     position: absolute;
     top: 50%;
@@ -256,48 +256,98 @@ ul li{
     transform: translate(-50%, -50%);
     width: 50%;
 }
+
 .instruction h3 {
     text-align: center;
     font-size: 24px;
     font-weight: 500;
 }
-.instr img{
+
+.instr img {
     width: 100px;
 }
 
-.instr{
+.instr {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.how-to-use{
+.how-to-use {
     margin: 25px auto;
     position: relative;
 }
 
-.instr p{
+.instr p {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    padding: 10px; 
+    padding: 10px;
     padding-left: 25px;
     padding-right: 25px;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.24);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.24);
     margin-left: -20px;
     width: 50%;
 }
 
-.right p{
+.right p {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    padding: 10px; 
+    padding: 10px;
     padding-left: 25px;
     padding-right: 25px;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.24);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.24);
     margin-right: -20px;
     text-align: center;
 
+}
+
+
+
+/* faq */
+
+.q {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 7px 0;
+    padding: 10px 15px;
+    background-color: #005280;
+    margin: 0;
+    color: white;
+    border-radius: 15px;
+    border: #005280 1px solid;
+
+}
+
+.a {
+    display: none;
+    margin: 0;
+    padding: 15px;
+    padding-top: 0;
+    margin-top: 5px;
+    font-size: 14px;
+
+}
+
+.faq-content {
+    margin: 20px auto;
+}
+
+.faq-div {
+    /* padding: 25px; */
+    color: #005280;
+}
+
+.faq {
+    /* background-color: #ccdee8; */
+    margin: 0;
+    padding: 25px 0;
+}
+
+
+.title h3 {
+    margin: 0;
+    padding: 10px 0;
 }
