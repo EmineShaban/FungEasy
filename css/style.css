@@ -313,11 +313,11 @@ ul li {
     font-size: 16px;
     margin: 7px 0;
     padding: 10px 15px;
-    background-color: #005280;
+    background-color: #0c1579c8;
     margin: 0;
     color: white;
     border-radius: 15px;
-    border: #005280 1px solid;
+    border: #0c1579c8 1px solid;
 
 }
 
@@ -350,4 +350,54 @@ ul li {
 .title h3 {
     margin: 0;
     padding: 10px 0;
+}
+
+
+
+
+/* comments */
+
+.comments-div{
+    color: #0c1579;
+}
+
+.comment{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 25px;
+    width: 50%;
+}
+
+.stars{
+    display: flex;
+    align-items: center;
+}
+.stars p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 900;
+}
+.stars img{
+    width: 120px;
+    margin-left: 15px;
+}
+.verif{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-top: -7px;
+}
+.verif p{
+    margin: auto 0;
+    font-size: 12px;
+    font-weight: 700;
+}
+.verif img{
+    width: 20px;
+}
+.comm-text{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 10px;
 }
