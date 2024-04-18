@@ -19,6 +19,10 @@ header h2 {
     text-shadow: #0c157968 1px 0 10px;
 }
 
+header ul li a{
+    text-transform: uppercase;
+}
+
 h1,
 h2,
 h3,
@@ -78,7 +82,9 @@ h1 span {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
+.product div{
+    margin: auto;
+}
 .product-img {
     width: 70%;
     margin: auto;
@@ -115,12 +121,14 @@ h1 span {
     width: 40%;
     margin: auto;
     padding: 30px;
-    background-color: #7bacce;
+    background-color: #0c1579;
 
 }
-
+.mySwiperCare:host {
+    --swiper-theme-color: #ffffff;
+}
 div.title {
-    background-color: #dedede;
+    background-color: #ffffff;
     padding: 5px;
     margin: 10px;
     border-top-right-radius: 125px;
@@ -208,7 +216,7 @@ div.mySwiperCare-div p span {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 70px;
-    margin: 25px auto;
+    margin: 40px auto;
 }
 
 .ingr {
@@ -356,16 +364,27 @@ ul li {
 
 
 /* comments */
-
+.comments{
+    position: relative;
+}
 .comments-div{
     color: #0c1579;
 }
-
+.comments-div{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.452);
+    padding: 25px 50px;
+    border-radius: 50px;
+}
 .comment{
     display: grid;
     grid-template-columns: 100px 1fr;
-    gap: 25px;
-    width: 50%;
+    gap: 25px; 
+    margin-bottom: 25px;
 }
 
 .stars{
@@ -401,3 +420,199 @@ ul li {
     margin: 0;
     margin-top: 10px;
 }
+
+
+
+
+
+
+/* order */
+
+.order {
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    gap: 50px;
+}
+ 
+.prod {
+    width: 80%;
+    margin: auto;
+}
+
+.radio-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ 
+.radio-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.space{
+    display: flex;
+    justify-content: space-between;
+}
+.free {
+    text-align: center;
+    border: 2px dashed #005280;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 7px 0;
+}
+
+button {
+    background-color: #0c1579;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 20px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: 800;
+}
+
+.sw-div {
+    margin: auto 0;
+}
+
+.order-div h3 {
+    font-size: 35px;
+    text-align: center;
+    color: #0c1579;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+}
+
+.order-radio {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.radio {
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+}
+
+.yellow {
+    background-color: #f5c14f;
+}
+
+label p {
+    margin-left: 5px;
+}
+
+label p span {
+    color: #f26522;
+    font-weight: 700;
+}
+
+input[type="radio"] {
+    accent-color: red;
+    margin: auto;
+}
+
+.order {
+    margin: 50px auto;
+}
+
+.order-stars {
+    display: flex;
+    align-items: center;
+}
+
+.order-stars img {
+    width: 100px;
+}
+
+.order-stars p {
+    margin: 0;
+}
+
+.order-bullets {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px auto;
+}
+
+.order-content {
+    margin: auto;
+    text-align: center;
+}
+
+.order-content img {
+    width: 80px;
+}
+
+.order-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+form input,
+select {
+    margin: 5px 0;
+    padding: 5px;
+}
+
+
+
+
+/* footer */
+footer div.links {
+    text-align: center;
+    margin: 15px;
+  }
+  
+  footer a {
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+  
+  footer p {
+    text-align: center;
+  }
+  
+  footer p.disclaimer {
+    width: 70%;
+    margin: 10px auto;
+    letter-spacing: 0;
+    line-height: 1;
+    font-size: 14px;
+  }
+  
+
+  .footFungus {
+    margin: 40px auto;
+  }
+
+  @media screen and (max-width: 1600px) {
+
+    .container {
+        width: 80%;
+        
+    }
+    .footFungus {
+
+        width: 100%;
+    }
+    .sw{
+        width: 60%;
+        
+    }
+  }

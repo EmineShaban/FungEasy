@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FungEase</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,19 +36,19 @@
 
     <header>
         <h2>FungEasy</h2>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
+        <ul> 
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#ingredients">Ingredients </a></li>
+            <li><a href="index.html#how-to-use">HOW TO USE
+            </a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
         </ul>
     </header>
     <div class="container">
         <h1><span>FungEase Antifungal Cream:</span> Your ultimate foot fungus solution
         </h1>
     </div>
-    <div class="product container">
+    <div class="product container" id="about">
         <div class="product-img">
             <img src="./images/product.webp" alt="">
 
@@ -191,29 +191,29 @@
         <p><b>Comprehensive Solution:</b> FungEase not only treats the symptoms of foot fungus but also helps
             prevent recurrence, promoting long-term foot health and comfort.
         </p>
-        <div class="formula-img">
-            <img src="./images/FungEase website_background 1-05.webp" alt="">
-            <div class="formula-div">
-                <h3><b>OUR</b> FORMULA</h3>
-                <div class="formula-images">
-                    <div>
-                        <img src="./images/FungEase_icons-05.webp" alt="">
-                        <p><b>Grieater</b> relief</p>
-                    </div>
-                    <div>
-                        <img src="./images/FungEase_icons-06.webp" alt="">
-                        <p><b>Faster</b> recovery</p>
-                    </div>
-                    <div>
-                        <img src="./images/FungEase_icons-07.webp" alt="">
-                        <p><b>Long lasting</b> protection</p>
-                    </div>
+    </div>
+    <div class="formula-img container">
+        <img src="./images/FungEase website_background 1-05.webp" alt="">
+        <div class="formula-div">
+            <h3><b>OUR</b> FORMULA</h3>
+            <div class="formula-images">
+                <div>
+                    <img src="./images/FungEase_icons-05.webp" alt="">
+                    <p><b>Grieater</b> relief</p>
+                </div>
+                <div>
+                    <img src="./images/FungEase_icons-06.webp" alt="">
+                    <p><b>Faster</b> recovery</p>
+                </div>
+                <div>
+                    <img src="./images/FungEase_icons-07.webp" alt="">
+                    <p><b>Long lasting</b> protection</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="ingridients container">
+    <div class="ingridients container" id="ingredients">
         <h3 class="title-h3">Ingredients for Superior Foot Fungus Defense
         </h3>
         <p>At FungEase, we believe in harnessing the power of nature to combat foot fungus effectively. Our carefully
@@ -290,7 +290,7 @@
         </ul>
     </div>
 
-    <div class="how-to-use container">
+    <div class="how-to-use container" id="how-to-use">
         <img src="./images/FungEase_background 2-14.webp" alt="">
         <div class="instruction">
             <h3><b>HOW TO USE</b></h3>
@@ -413,6 +413,87 @@
             </div>
         </div>
     </div>
+    <div class="order container" id="order">
+        <!-- Swiper -->
+        <div class="sw-div">
+
+            <div class="prod">
+                <img src="./images/product.webp" alt="">
+            </div>
+            <div class="order-bullets">
+                <div class="order-content">
+                    <img src="https://lesthe.com/cdn/onycostop/covers_assets/w2403-m-1-core-clinic/images/order1.png"
+                        alt="">
+                    <p>FREE SHIPPING</p>
+                </div>
+                <div class="order-content">
+                    <img src="https://lesthe.com/cdn/onycostop/covers_assets/w2403-m-1-core-clinic/images/order2.png"
+                        alt="">
+                    <p>TAKES 1 TO 3 DAYS</p>
+                </div>
+                <div class="order-content">
+                    <img src="https://lesthe.com/cdn/onycostop/covers_assets/w2403-m-1-core-clinic/images/order3.png"
+                        alt="">
+                    <p>PAY WHEN YOU RECEIVE</p>
+                </div>
+            </div>
+        </div>
+        <div class="order-div">
+            <h3>FungEase</h3>
+            <div class="order-stars">
+                <img src="https://lesthe.com/cdn/onycostop/covers_assets/w2403-m-1-core-clinic/images/stars.png" alt="">
+                <p>158 reviews </p>
+            </div>
+
+            <div class="order-radio"> 
+                <div class="control radio-2">
+                    <label class="radio">
+                        <input type="radio" name="rsvp"> 
+                            1 Pack - <b>25 euros </b> 
+                    </label>
+                    <label class="radio yellow">
+                        <input type="radio" name="rsvp">
+                        <span class="orange"><b>BEST DEAL</b></span> 
+                        2 Pack (20 euros each) - <b>40 euros </b> 
+                    </label>
+                    <label class="radio" disabled>
+                        <input type="radio" name="rsvp">
+                        3 Pack (15 euros each) - <b>45 euros</b>
+                    </label>
+                </div>
+          
+            </div>
+            <form action="./additional-links/thank-you.php">
+                <input type="text" placeholder="Full name" required>
+                <input type="text" placeholder="Adress" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Telephone" required>
+                <select name="cars" id="cars">
+                    <option value="volvo">Cash on delivery</option>
+                </select>
+                <button>Order Now</button>
+            </form>
+            <p class="free">Free shipping over 30 euros </p>
+        </div>
+
+    </div>
+    <footer>
+        <div class="links">
+            <a href="./additional-links/ingredients.html">Ingredients</a>
+            <a href="./additional-links/contacts.html">Contacts</a>
+            <a href="/covers-storage/cover/additional-links/EN/privacy-policy.html">Privacy & Policy</a>
+            <a href="/covers-storage/cover/additional-links/EN/terms.html">Terms of Use</a>
+        </div>
+    
+        <p class="disclaimer">
+            Although our products contain natural ingredients, they should not be considered a substitute for professional medical care and advice. If you have underlying medical conditions or concerns, consult a qualified healthcare professional.
+            FungEase makes no claims about treating, curing, or preventing any medical condition.
+            Our products are not intended for diagnosing or treating any medical condition.
+        </p>
+        
+        <p>© 2023 Copyright</p>
+        
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     <script src="./js/index.js"></script>
