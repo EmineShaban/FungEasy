@@ -8,6 +8,10 @@ body {
     margin: auto;
 }
 
+.mobile {
+    display: none;
+}
+
 img {
     width: 100%;
 }
@@ -19,7 +23,7 @@ header h2 {
     text-shadow: #0c157968 1px 0 10px;
 }
 
-header ul li a{
+header ul li a {
     text-transform: uppercase;
 }
 
@@ -82,9 +86,11 @@ h1 span {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.product div{
+
+.product div {
     margin: auto;
 }
+
 .product-img {
     width: 70%;
     margin: auto;
@@ -124,9 +130,11 @@ h1 span {
     background-color: #0c1579;
 
 }
+
 .mySwiperCare:host {
     --swiper-theme-color: #ffffff;
 }
+
 div.title {
     background-color: #ffffff;
     padding: 5px;
@@ -364,13 +372,15 @@ ul li {
 
 
 /* comments */
-.comments{
+.comments {
     position: relative;
 }
-.comments-div{
+
+.comments-div {
     color: #0c1579;
 }
-.comments-div{
+
+.comments-div {
     position: absolute;
     top: 50%;
     left: 35%;
@@ -380,41 +390,48 @@ ul li {
     padding: 25px 50px;
     border-radius: 50px;
 }
-.comment{
+
+.comment {
     display: grid;
     grid-template-columns: 100px 1fr;
-    gap: 25px; 
+    gap: 25px;
     margin-bottom: 25px;
 }
 
-.stars{
+.stars {
     display: flex;
     align-items: center;
 }
-.stars p{
+
+.stars p {
     margin: 0;
     font-size: 18px;
     font-weight: 900;
 }
-.stars img{
+
+.stars img {
     width: 120px;
     margin-left: 15px;
 }
-.verif{
+
+.verif {
     display: flex;
     align-items: center;
     margin: 0;
     margin-top: -7px;
 }
-.verif p{
+
+.verif p {
     margin: auto 0;
     font-size: 12px;
     font-weight: 700;
 }
-.verif img{
+
+.verif img {
     width: 20px;
 }
-.comm-text{
+
+.comm-text {
     font-size: 14px;
     font-weight: 600;
     margin: 0;
@@ -433,7 +450,7 @@ ul li {
     grid-template-columns: 700px 1fr;
     gap: 50px;
 }
- 
+
 .prod {
     width: 80%;
     margin: auto;
@@ -444,16 +461,18 @@ ul li {
     flex-direction: column;
     justify-content: space-between;
 }
- 
+
 .radio-div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.space{
+
+.space {
     display: flex;
     justify-content: space-between;
 }
+
 .free {
     text-align: center;
     border: 2px dashed #005280;
@@ -575,44 +594,241 @@ select {
 footer div.links {
     text-align: center;
     margin: 15px;
-  }
-  
-  footer a {
+}
+
+footer a {
     margin: 15px;
     text-align: center;
     text-decoration: none;
     color: black;
-  }
-  
-  footer p {
+}
+
+footer p {
     text-align: center;
-  }
-  
-  footer p.disclaimer {
+}
+
+footer p.disclaimer {
     width: 70%;
     margin: 10px auto;
     letter-spacing: 0;
     line-height: 1;
     font-size: 14px;
-  }
-  
+}
 
-  .footFungus {
+
+.footFungus {
     margin: 40px auto;
-  }
+}
 
-  @media screen and (max-width: 1600px) {
+@media screen and (max-width: 1600px) {
 
     .container {
         width: 80%;
-        
+
     }
-    .footFungus {
+
+    .footFungus,
+    .comments {
 
         width: 100%;
     }
-    .sw{
+
+    .sw {
         width: 60%;
-        
+
     }
-  }
+
+    .order {
+        display: grid;
+        grid-template-columns: 600px 1fr;
+    }
+
+    .order-div h3 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+
+    .container {
+        width: 90%;
+
+    }
+
+    .footFungus,
+    .comments {
+
+        width: 100%;
+    }
+
+    .order {
+        display: grid;
+        grid-template-columns: 500px 1fr;
+    }
+}
+
+
+@media screen and (max-width: 994px) {
+
+    .ingr-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .comments-div {
+
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 80%;
+    }
+
+    .order {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .sw {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .product {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footFungus-div {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        width: 61%;
+        background-color: azure;
+        padding: 5px 8px;
+        border-radius: 15px;
+    }
+
+    .formula-img {
+        width: 100%;
+    }
+
+    .formula-div {
+        position: absolute;
+        top: 50%;
+        left: 72%;
+        transform: translate(-50%, -50%);
+        color: white;
+        width: 53%;
+        margin: auto;
+    }
+
+    .ingr-div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .ingr {
+        width: 65%;
+        margin: auto;
+    }
+
+    .instruction {
+        position: relative;
+        transform: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    h1 {
+        text-align: center;
+        font-size: 23px;
+        margin-top: 30px;
+    }
+
+    .footFungus-div {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 90%;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    .desktop500 {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .ingr-div {
+        gap: 5px;
+    }
+
+    .ingr {
+        width: 90%;
+        margin: auto;
+    }
+
+    .comments-div {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .sw {
+        padding: 5px;
+    }
+
+    footer p.disclaimer {
+        width: 100%;
+    }
+
+    footer div.links {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    footer a {
+        margin: 2px;
+    }
+
+    .order {
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    header ul li a {
+        color: black;
+        font-size: 12px;
+    }
+
+    .formula-images {
+        width: 95%;
+    }
+}
