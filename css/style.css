@@ -121,8 +121,15 @@ h1 span {
     padding: 20px;
     border-radius: 15px;
 }
-
-
+.order-text{
+    text-align: center;
+    font-weight: 800;
+    font-size: 18px;
+    color: red;
+}
+.fungus ul li{
+    list-style-type: disc;
+}
 .sw {
     width: 40%;
     margin: auto;
@@ -208,8 +215,12 @@ div.mySwiperCare-div p span {
 .formula-images div img {
     width: 90px;
 }
-
-
+.fungus ul{
+    margin-left: 20px;
+}
+.fungus li span{
+    font-weight: 900;
+}
 /* ingridients */
 
 .ingridients ul li {
@@ -813,6 +824,12 @@ footer p.disclaimer {
 
 
 @media screen and (max-width: 768px) {
+    .order-text{
+        text-align: center;
+        font-weight: 800;
+        font-size: 15px;
+        color: red;
+    }
     .order-pack h4 { 
         font-size: 14px;
     }
@@ -880,6 +897,12 @@ footer p.disclaimer {
 
 
 @media screen and (max-width: 500px) {
+    .order-text{
+        text-align: center;
+        font-weight: 800;
+        font-size: 17px;
+        color: red;
+    }
     .order {
         display: flex; 
         flex-direction: column;

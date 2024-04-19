@@ -126,55 +126,29 @@
             </swiper-slide>
         </swiper-container>
     </div>
-    <div class="sw">
-        <swiper-container class="mySwiperCare" pagination="true" pagination-type="progressbar">
 
-            <swiper-slide role="group" aria-label="2 / 2" class="swiper-slide-next" style="width: 638px;">
-                <div class="title">
-                    <h3>Recognizing Foot Fungus:
-                    </h3>
-                </div>
-                <div class="mySwiperCare-div">
-                    <p>
-                        <span> Itching and Burning: </span>
-                        Persistent itching and burning sensations on the feet, particularly between the toes, are common
-                        signs of foot fungus.
-                    </p>
-                </div>
-                <div class="mySwiperCare-div">
-                    <p>
-                        <span>
-                            Redness and Inflammation:
-                        </span>
-                        The affected skin may appear red, inflamed, and irritated, with visible signs of discomfort.
-                    </p>
-                </div>
-
-                <div class="mySwiperCare-div">
-                    <p>
-                        <span>Cracking and Peeling:</span>
-                        Skin on the feet may crack, peel, or develop scales, especially in areas prone to moisture
-                        accumulation.
-                    </p>
-                </div>
-                <div class="mySwiperCare-div">
-                    <p>
-                        <span> Foul Odor:</span>
-                        A strong, unpleasant odor emanating from the feet, often resembling a musty or sour smell, can
-                        indicate a
-                        fungal infection.
-                    </p>
-                </div>
-                <div class="mySwiperCare-div">
-                    <p>
-                        <span> Changes in Nails:</span>
-                        Foot fungus can spread to the toenails, causing them to become thickened, discolored, and
-                        brittle over time.
-                    </p>
-                </div>
-            </swiper-slide>
-        </swiper-container>
+    <div class="fungus container">
+        <h3 class="title-h3">Recognizing Foot Fungus:
+        </h3>
+        <ul>
+            <li> <span> Itching and Burning: </span>
+                Persistent itching and burning sensations on the feet, particularly between the toes, are common
+                signs of foot fungus.</li>
+            <li><span> Redness and Inflammation: </span>
+                The affected skin may appear red, inflamed, and irritated, with visible signs of discomfort.
+            </li>
+            <li> <span>Cracking and Peeling:</span>
+                Skin on the feet may crack, peel, or develop scales, especially in areas prone to moisture
+                accumulation.</li>
+            <li><span> Foul Odor:</span>
+                A strong, unpleasant odor emanating from the feet, often resembling a musty or sour smell, can
+                indicate a fungal infection.</li>
+            <li> <span> Changes in Nails:</span>
+                Foot fungus can spread to the toenails, causing them to become thickened, discolored, and
+                brittle over time.</li>
+        </ul>
     </div>
+
     <div class="formula container">
         <h3 class="title-h3">What Sets FungEase Apart?
         </h3>
@@ -204,7 +178,7 @@
             <div class="formula-images desktop500">
                 <div>
                     <img src="./images/FungEase_icons-05.webp" alt="">
-                    <p><b>Greater</b> relief 
+                    <p><b>Greater</b> relief
                     </p>
                 </div>
                 <div>
@@ -591,7 +565,7 @@
             </div>
 
         </div>
-        
+
     </div>
     <div class="order container">
 
@@ -602,8 +576,11 @@
                 <p class="old-price">€60</p>
                 <p class="price">€45</p>
             </div>
-            
-         </div>
+            <p class="order-text">BUY 3 GET 15$ OFF</p>
+
+            <button onclick="location.href='index.html#order'" type="button">Select</button>
+
+        </div>
         <div class="order-pack" id="two">
             <h4>Save €10</h4>
             <img src="./images/FungEase_products-02.webp" alt="">
@@ -611,7 +588,10 @@
                 <p class="old-price">€50</p>
                 <p class="price">€40</p>
             </div>
-         </div>
+            <p class="order-text">BUY 2 GET 10$ OFF</p>
+            <button onclick="location.href='index.html#order'" type="button">Select</button>
+
+        </div>
         <div class="order-pack" id="three">
             <h4>Save €5</h4>
             <img src="./images/FungEase_products-01.webp" alt="">
@@ -619,9 +599,12 @@
                 <p class="old-price">€30</p>
                 <p class="price">€25</p>
             </div>
-         </div>
+            <p class="order-text">BUY 1 GET 5$ OFF</p>
+
+            <button onclick="location.href='index.html#order'" type="button">Select</button>
+        </div>
         <div class="order-pack" id="four">
-           <h4>Order your special offer now</h4>
+            <h4>Order your special offer now</h4>
             <form id="order" action="./additional-links/thank-you.php">
                 <input type="text" placeholder="Full name" required>
                 <input type="text" placeholder="Adress" required>
@@ -633,11 +616,11 @@
                 <select name="packs" id="packs">
                     <option value="one">1 Pack - <b>25 euros </b></option>
                     <option value="two">2 Pack (20 euros each) - <b>40 euros </b></option>
-                    <option value="three">3 Pack (15 euros each) - <b>45 euros</b></option> 
+                    <option value="three">3 Pack (15 euros each) - <b>45 euros</b></option>
                 </select>
                 <button>Order Now</button>
             </form>
-            
+
         </div>
     </div>
 
