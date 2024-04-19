@@ -397,7 +397,12 @@ ul li {
     gap: 25px;
     margin-bottom: 25px;
 }
-
+.comment2 {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
 .stars {
     display: flex;
     align-items: center;
@@ -437,7 +442,6 @@ ul li {
     margin: 0;
     margin-top: 10px;
 }
-
 
 
 
@@ -699,14 +703,19 @@ footer p.disclaimer {
 
     }
 
-    .order {
+    /* .order {
         display: grid;
         grid-template-columns: 600px 1fr;
-    }
+    } */
 
     .order-div h3 {
         margin-top: 0;
     }
+    .comment2{
+        width: 80%;
+        margin: auto;
+    }
+    
 }
 
 @media screen and (max-width: 1200px) {
@@ -723,21 +732,65 @@ footer p.disclaimer {
         width: 100%;
     }
 
+  
+
     .order {
         display: grid;
-        grid-template-columns: 500px 1fr;
+        grid-template-areas: "one two three" "four four four";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr; 
+      }
+      
+      #one {
+        grid-area: one; 
+      }
+      #two {
+        grid-area: two; 
+      }
+      #three {
+        grid-area: three; 
+      }
+      #four {
+        grid-area: four;
+        width: 50%;
+        margin: auto; 
+      }
+      .comment {
+        width: 80%;
+        margin: auto;
+      
+    }
+    .comments-div { 
+        width: 100%;
     }
 }
 
 
 @media screen and (max-width: 994px) {
-
+    .comment {
+        width: 90%;
+        margin: auto;
+    }
+    .comments-div{
+        padding: 0;
+        margin: auto;
+    }
     .ingr-div {
         display: grid;
         grid-template-columns: 1fr 1fr;
 
     }
+    .comm-text{
+        color: #0c1579;
+    }
+    .stars p{
+        color: #0c1579;
 
+    }
+    .comment {
+        width: 100%;
+        margin: auto;
+    }
     .comments-div {
 
         position: relative;
@@ -746,12 +799,13 @@ footer p.disclaimer {
         transform: none;
         width: 80%;
     }
-
-    .order {
-        display: grid;
-        grid-template-columns: 1fr;
+    #four {
+        grid-area: four;
+        width: 80%;
+        margin: auto;
     }
-
+ 
+    
     .sw {
         width: 90%;
     }
@@ -759,7 +813,13 @@ footer p.disclaimer {
 
 
 @media screen and (max-width: 768px) {
-
+    .order-pack h4 { 
+        font-size: 14px;
+    }
+    .order-pack button { 
+        padding: 10px 10px;
+        font-size: 16px;
+    }
     .product {
         display: grid;
         grid-template-columns: 1fr;
@@ -820,7 +880,25 @@ footer p.disclaimer {
 
 
 @media screen and (max-width: 500px) {
-
+    .order {
+        display: flex; 
+        flex-direction: column;
+    }
+    #four { 
+        width: 100%;
+        margin: auto;
+    }
+    .order-pack button {
+        padding: 10px 40px;
+        font-size: 18px;
+    }
+    .order-pack img{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     h1 {
         text-align: center;
         font-size: 23px;
@@ -888,8 +966,19 @@ footer p.disclaimer {
         color: black;
         font-size: 12px;
     }
-
+    .comment2 {
+        display: grid;
+        grid-template-columns: 75px 1fr;
+    }
     .formula-images {
         width: 95%;
+    }
+    .stars img {
+        width: 90px;
+        margin-left: 1px;
+    }
+    .stars p {
+        margin: 0;
+        font-size: 14px;
     }
 }
